@@ -78,7 +78,7 @@ export default function Contact() {
   return (
     <StyledContactSection id="contact">
       <h2>Contact Me</h2>
-      <p>Thank you for checking out my website! If you want to get in touch, send me an email at <a href={`mailto:${contactInformation.email}`} target="_blank" rel="noreferrer">{contactInformation.email}</a>.</p>
+      <p>If you want to get in touch, send me an email at <a href={`mailto:${contactInformation.email}`} target="_blank" rel="noreferrer">{contactInformation.email}</a>!</p>
       <p>Alternatively, check out my links below:</p>
       <StyledLinks>
         {contactInformation.github && <a href={contactInformation.github} target="_blank" rel="noreferrer"> <GitHubIcon /> </a>}
