@@ -21,12 +21,12 @@ const StyledHeroSection = styled.section`
 
   h2 {
     color: var(--color-text-primary);
-    font-size: clamp(2.9rem, 10vw, 6rem);
+    font-size: clamp(2.9rem, 10vw, 5rem);
   }
 
 
   p {
-    font-size: clamp(1rem, 2vw, 2.5rem);
+    font-size: clamp(1rem, 2vw, 2rem);
     line-height: 150%;
     color: var(--color-text-secondary);
     margin-bottom: 2rem;
@@ -43,7 +43,7 @@ const StyledHeroSection = styled.section`
 
   span {
       a {
-      font-size: clamp(1rem, 2vw, 2.5rem);
+      font-size: clamp(1rem, 1.5vw, 2rem);
       text-decoration: none;
       color: var(--color-accent);
       outline: 1px solid var(--color-accent);
