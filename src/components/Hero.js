@@ -14,7 +14,7 @@ const StyledHeroSection = styled.section`
   margin-inline: auto;
   
   h1 {
-    font-size: clamp(1rem, 2vw, 2.5rem);
+    font-size: clamp(1rem, 2vw, 2rem);
     font-weight: var(--fw-regular);
     color: var(--color-accent);
   }
@@ -43,7 +43,7 @@ const StyledHeroSection = styled.section`
 
   span {
       a {
-      font-size: clamp(1rem, 1.5vw, 2rem);
+      font-size: clamp(1rem, 2vw, 2rem);
       text-decoration: none;
       color: var(--color-accent);
       outline: 1px solid var(--color-accent);
