@@ -45,7 +45,7 @@ Color palette (also found in [src/styles/GlobalStyles.js](https://github.com/Rud
 
 ## 🎬 Credits
 
-Though I created this project by myself, I was inspired by Brittany Chiang's personal website. Check out her website at [brittanychiang.com)](brittanychiang.com)!
+Though I created this project by myself, I was inspired by Brittany Chiang's personal website. Check out her website at [brittanychiang.com](brittanychiang.com)!
 
 ## 🤝 Contributing
 Pull requests are welcome!
