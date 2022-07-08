@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-    <a href="rudrapatel.net"><img src="https://raw.githubusercontent.com/RudraPatel2003/rudrapatel/master/public/logo192.png"></a>
+    <a href="https://rudrapatel.net"><img src="https://raw.githubusercontent.com/RudraPatel2003/rudrapatel/master/public/logo192.png"></a>
   <br>
   <a href="https://rudrapatel.net">rudrapatel.net</a>
   <br>
