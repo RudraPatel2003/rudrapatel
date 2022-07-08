@@ -2,7 +2,7 @@
   <br>
     <a href="rudrapatel.net"><img src="https://raw.githubusercontent.com/RudraPatel2003/rudrapatel/master/public/logo192.png"></a>
   <br>
-  <a href="rudrapatel.net">rudrapatel.net</a>
+  <a href="https://rudrapatel.net">rudrapatel.net</a>
   <br>
 </h1>
 <h2 align="center">My portfolio website designed on <a href="https://www.figma.com/" target="_blank" rel="noreferrer">Figma</a>, built with <a href="https://create-react-app.dev/" target="_blank" rel="noreferrer">CreateReactApp</a>, and hosted on <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">Netlify</a>.</h2>
