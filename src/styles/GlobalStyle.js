@@ -17,10 +17,10 @@ const GlobalStyle = createGlobalStyle`
   :root {
     scroll-behavior: smooth;
 
-    --color-background: #071a38;
+    --color-background: #071A38;
     --color-background-dark: #06162F; // footer
     --color-background-dark-transparent: #06162F5F; // nav bar when scrolling 
-    --color-background-darkest: #05081f; // splash screen
+    --color-background-darkest: #05081F; // splash screen
     --color-background-light: #0A2043; // project cards
     --color-text-primary: #B7D0F7;
     --color-text-secondary: #6D88B0; 
