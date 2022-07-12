@@ -1,6 +1,6 @@
 import React from 'react'
-import GitHubIcon from "../../assets/icons/GitHub.svg"
-import ExternalLinkIcon from "../../assets/icons/ExternalLink.svg"
+import GitHubIcon from "../assets/icons/GitHub.svg"
+import ExternalLinkIcon from "../assets/icons/ExternalLink.svg"
 import styled from 'styled-components'
 
 const StyledProjectCard = styled.article`

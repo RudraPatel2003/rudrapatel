@@ -1,7 +1,8 @@
 import React, { useState, useEffect} from 'react'
-import Logo from "../../assets/icons/Logo.svg"
-import HamburgerOpen from "../../assets/icons/HamburgerOpen.svg"
-import HamburgerClose from "../../assets/icons/HamburgerClose.svg"
+import Link from "next/link"
+import Logo from "../assets/icons/Logo.svg"
+import HamburgerOpen from "../assets/icons/HamburgerOpen.svg"
+import HamburgerClose from "../assets/icons/HamburgerClose.svg"
 import styled, { css } from 'styled-components'
 
 const StyledHeader = styled.header`
@@ -123,9 +124,9 @@ export default function NavBar() {
       lastScrollY = scrollY > 0 ? scrollY : 0;
       ticking = false;
     };
-
+    
     const onScroll = () => {
-      setHamburgerMenuVisible(false)
+      setHamburgerMenuVisible(false) // close hamburger menu on scroll
       window.scrollY > 100 ? setScrolledToTop(false) : setScrolledToTop(true) 
       if (!ticking) {
         window.requestAnimationFrame(updateScrollDirection);
@@ -154,9 +155,12 @@ export default function NavBar() {
       <Logo />
       <StyledNav>
         <ul>
-          <li><a href="/#about" onClick={closeHamburgerMenu}>About Me</a></li>
-          <li><a href="/#projects" onClick={closeHamburgerMenu}>Projects</a></li>
-          <li><a href="/#contact" onClick={closeHamburgerMenu}>Contact</a></li>
+          {/* clicking on a link in the hamburger menu usually closes the window because of scrolling but 
+          on the rare case that you are on the exact pixel that the anchor scrolls you to, the screen won't scroll.
+          because of this, the closeHamburgerMenu forces a close regardless*/}
+          <li><Link href="/#about"><a onClick={closeHamburgerMenu}>About Me</a></Link></li>
+          <li><Link href="/#projects"><a onClick={closeHamburgerMenu}>Projects</a></Link></li>
+          <li><Link href="/#contact"><a onClick={closeHamburgerMenu}>Contact</a></Link></li>
           <li><a href="/resume.pdf" className="outline">Resume</a></li>
         </ul>
       </StyledNav>
