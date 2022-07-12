@@ -9,7 +9,7 @@ export const projects = [
   {
     name: "Portfolio Website",
     description: "The website you are currently on right now. Built to showcase my personal projects and introduce myself!",
-    tags: ["JavaScript", "React", "Create React App", "Styled Components"],
+    tags: ["JavaScript", "React", "Next.js", "Styled Components"],
     githubLink: "https://github.com/RudraPatel2003/rudrapatel"
   },
   {
