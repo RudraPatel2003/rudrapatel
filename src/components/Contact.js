@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import InstagramIcon  from "../../assets/icons/Instagram.svg"
-import GitHubIcon from "../../assets/icons/GitHub.svg"
-import LinkedInIcon from "../../assets/icons/LinkedIn.svg"
+import InstagramIcon  from "../assets/icons/Instagram.svg"
+import GitHubIcon from "../assets/icons/GitHub.svg"
+import LinkedInIcon from "../assets/icons/LinkedIn.svg"
 import { contactInformation } from "../config"
 
 const StyledContactSection = styled.section`

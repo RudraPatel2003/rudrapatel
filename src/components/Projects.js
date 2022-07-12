@@ -66,12 +66,13 @@ const GridContainer = styled.div`
 
 export default function Projects() {
   const generateProjectCards = () => {
-    return projects.map(project => <ProjectCard 
+    return projects.map((project, index) => <ProjectCard 
       name={project.name} 
       description={project.description} 
       tags={project.tags} 
       githubLink={project.githubLink} 
-      externalLink={project.externalLink} />
+      externalLink={project.externalLink}
+      key={index} />
     )
   }
 

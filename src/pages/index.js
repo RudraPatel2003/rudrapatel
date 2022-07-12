@@ -11,11 +11,6 @@ export default function Home() {
         
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/logo192.png" />
-
-        {/* Google Fonts */}
-        <style>
-          @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
-        </style>
       </Head>
 
       <GlobalStyle />

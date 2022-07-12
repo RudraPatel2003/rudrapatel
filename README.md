@@ -12,7 +12,7 @@
   <img src="https://api.netlify.com/api/v1/badges/d047e6af-4acb-4dd7-b51a-2861888aa223/deploy-status" alt="Netlify deploy status">
 </p>
 
-![Website Demo](https://raw.githubusercontent.com/RudraPatel2003/rudrapatel/master/assets/images/WebsiteImage.png)
+![Website Demo](https://raw.githubusercontent.com/RudraPatel2003/rudrapatel/master/src/assets/images/WebsiteImage.png)
 
 ## 🔨 Installation and Usage
 

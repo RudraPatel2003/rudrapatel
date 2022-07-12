@@ -1,6 +1,6 @@
 import React from 'react'
-import GitHubIcon from "../../assets/icons/GitHub.svg"
-import ExternalLinkIcon from "../../assets/icons/ExternalLink.svg"
+import GitHubIcon from "../assets/icons/GitHub.svg"
+import ExternalLinkIcon from "../assets/icons/ExternalLink.svg"
 import styled from 'styled-components'
 
 const StyledProjectCard = styled.article`
@@ -65,7 +65,7 @@ export default function ProjectCard(props) {
       </div>
 
       <StyledTags>
-        {props.tags.map(tag => <p>{tag}</p>)}
+        {props.tags.map((tag, index) => <p key={index}>{tag}</p>)}
       </StyledTags>
 
       <StyledLinks>

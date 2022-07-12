@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "next/link"
 import styled from 'styled-components'
 
 const StyledHeroSection = styled.section`
@@ -65,7 +66,7 @@ export default function Hero() {
       <h1>Hello! My name is</h1>
       <h2>Rudra Patel.</h2>
       <p>Currently, I am a first-year computer science student at the <a href="https://www.utk.edu/" target="_blank" rel="noreferrer">University of Tennessee</a>.</p>
-      <span><a href="/#contact">Come say hi!</a></span>
+      <span><Link href="/#contact"><a>Come say hi!</a></Link></span>
     </StyledHeroSection>
   )
 }
