@@ -10,22 +10,25 @@ const StyledProjectsSection = styled.section`
 
   .section-header {
     position: relative;
-    background-color: var(--color-background);
+
     color: var(--color-text-primary);
+    background-color: var(--color-background);
+
     font-size: clamp(2rem, 4vw, 4rem);
     text-align: center;
+
     margin-bottom: 1rem;
 
     /* Add the green lines */
     &::before, &::after {
       content: "";
-      width: calc(35% - clamp(2rem, 4vw, 4rem));
-      height: 1px;
-      background-color: var(--color-accent);
-
       position: absolute;
       display: block;
       top: 50%;
+
+      width: calc(35% - clamp(2rem, 4vw, 4rem));
+      height: 1px;
+      background-color: var(--color-accent);
 
       @media (min-width: 25em) {
         width: calc(38% - clamp(2rem, 4vw, 4rem));

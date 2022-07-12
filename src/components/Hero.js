@@ -14,9 +14,9 @@ const StyledHeroSection = styled.section`
   margin-inline: auto;
   
   h1 {
+    color: var(--color-accent);
     font-size: clamp(1rem, 2vw, 2rem);
     font-weight: var(--fw-regular);
-    color: var(--color-accent);
   }
 
   h2 {
@@ -26,9 +26,10 @@ const StyledHeroSection = styled.section`
 
 
   p {
+    color: var(--color-text-secondary);
+
     font-size: clamp(1rem, 2vw, 2rem);
     line-height: 150%;
-    color: var(--color-text-secondary);
     margin-bottom: 2rem;
 
     a {
@@ -43,19 +44,21 @@ const StyledHeroSection = styled.section`
 
   span {
       a {
-      font-size: clamp(1rem, 2vw, 2rem);
-      text-decoration: none;
-      color: var(--color-accent);
-      outline: 1px solid var(--color-accent);
-      padding: 0.625em 1.25em;
-      
-      &:hover {
-        color: var(--color-text-primary);
-        outline-color: var(--color-text-primary);
-      }
+        color: var(--color-accent);
+        font-size: clamp(1rem, 2vw, 2rem);
+        text-decoration: none;
+
+        outline: 1px solid var(--color-accent);
+        padding: 0.625em 1.25em;
+        
+        &:hover {
+          color: var(--color-text-primary);
+          outline-color: var(--color-text-primary);
+        }
       }
   }
 `
+
 export default function Hero() {
   return (
     <StyledHeroSection>

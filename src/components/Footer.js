@@ -2,18 +2,18 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledFooter = styled.footer`
-  width: 100%;
-  height: var(--nav-height);
-  background: var(--color-background-dark);
-  padding: 0 3rem;
-  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  padding: 0 3rem;
+
+  width: 100%;
+  height: var(--nav-height);
 
   color: var(--color-text-secondary);
+  background-color: var(--color-background-dark);
 
   a {
     color: inherit;
@@ -23,6 +23,7 @@ const StyledFooter = styled.footer`
     }
   }
 `
+
 export default function Footer() {
   return (
     <StyledFooter>

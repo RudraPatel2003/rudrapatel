@@ -8,18 +8,17 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif; 
   }
 
-  //prevent animations from playing on window resize
-  .resize-animation-stopper * {
-    animation: none !important;
-    transition: none !important;
-  }
-
   :root {
-    scroll-behavior: smooth;
+    // the page flashes a certain color on load; this determines that color
+    background-color: var(--color-background-darkest); 
 
+    height: 100vh;
+    scroll-behavior: smooth;
+    
+    // variables
     --color-background: #071A38;
     --color-background-dark: #06162F; // footer
-    --color-background-dark-transparent: #06162F5F; // nav bar when scrolling 
+    --color-background-dark-transparent: #06162F5F; // nav bar when scrolling; needed for backdrop filter to work 
     --color-background-darkest: #05081F; // splash screen
     --color-background-light: #0A2043; // project cards
     --color-text-primary: #B7D0F7;
@@ -29,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
     --fw-regular: 400;
     --fw-bold: 700;
     --fw-black: 900;
-
+    
     --nav-height: 6.25rem; // 100px
   }
 
@@ -42,7 +41,6 @@ const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar {
     width: 5px;
   }
-
   ::-webkit-scrollbar-track {
     background-color: var(--color-background-dark)
   }

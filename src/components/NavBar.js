@@ -1,24 +1,26 @@
 import React, { useState, useEffect} from 'react'
-import { HashLink } from "react-router-hash-link"
-import { ReactComponent as Logo } from "./icons/Logo.svg"
-import { ReactComponent as HamburgerOpen} from "./icons/HamburgerOpen.svg"
-import { ReactComponent as HamburgerClose} from "./icons/HamburgerClose.svg"
-import styled, { css }from 'styled-components'
+import Logo from "../../assets/icons/Logo.svg"
+import HamburgerOpen from "../../assets/icons/HamburgerOpen.svg"
+import HamburgerClose from "../../assets/icons/HamburgerClose.svg"
+import styled, { css } from 'styled-components'
 
 const StyledHeader = styled.header`
   position: fixed;
   top: 0;
-  width: 100%;
-  backdrop-filter: blur(1rem);
   z-index: 10;
-  height: var(--nav-height);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 3rem;
 
+  width: 100%;
+  height: var(--nav-height);
+
+  backdrop-filter: blur(1rem);
+
   /* Change nav color if not at top of page */
-  transition: background-color 1s ease-in-out, transform 0.1s ease-in-out;
+  transition: background-color 1s ease-in-out, transform 0.25s ease-in-out;
 
   ${props => props.scrolledToTop ? 
   css`background-color: var(--color-background);` 
@@ -50,21 +52,20 @@ const StyledHeader = styled.header`
     ul {
       position: fixed;
       inset: 0 0 0 0;
-      height: 100vh;
-      background-color: var(--color-background-dark);
 
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-
       padding: 8rem 0rem;
+      
+      height: 100vh;
+      background-color: var(--color-background-dark);
       font-size: 1.5rem;
 
       transform: translateX(100%);
       transition: transform 0.5s ease-in-out;
 
-      ${
-        props => props.hamburgerMenuVisible && css`
+      ${props => props.hamburgerMenuVisible && css`
         transform: translateX(0%);`
       }
     }
@@ -75,7 +76,7 @@ const StyledNav = styled.nav`
   ul {
     display: flex;
     justify-content: space-evenly;
-    gap: 30px;
+    gap: 2rem;
 
     li {
       list-style: none;
@@ -138,6 +139,7 @@ export default function NavBar() {
 
   }, [scrollDirection]);
 
+  // open and close hamburger menu
   const hamburgerToggle = () => {
     setHamburgerMenuVisible(prev => !prev)
   }
@@ -152,13 +154,17 @@ export default function NavBar() {
       <Logo />
       <StyledNav>
         <ul>
-          <li><HashLink to="/#about" onClick={closeHamburgerMenu}>About Me</HashLink></li>
-          <li><HashLink to="/#projects" onClick={closeHamburgerMenu}>Projects</HashLink></li>
-          <li><HashLink to="/#contact" onClick={closeHamburgerMenu}>Contact</HashLink></li>
+          <li><a href="/#about" onClick={closeHamburgerMenu}>About Me</a></li>
+          <li><a href="/#projects" onClick={closeHamburgerMenu}>Projects</a></li>
+          <li><a href="/#contact" onClick={closeHamburgerMenu}>Contact</a></li>
           <li><a href="/resume.pdf" className="outline">Resume</a></li>
         </ul>
       </StyledNav>
-      {hamburgerMenuVisible ? <HamburgerClose className='hamburger-menu' onClick={hamburgerToggle}/> : <HamburgerOpen className="hamburger-menu" onClick={hamburgerToggle}/>}
+
+      {hamburgerMenuVisible ? 
+      <HamburgerClose className='hamburger-menu' onClick={hamburgerToggle}/> 
+      : <HamburgerOpen className="hamburger-menu" onClick={hamburgerToggle}/>}
+
     </StyledHeader>
   )
 }
