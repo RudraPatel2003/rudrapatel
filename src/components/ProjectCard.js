@@ -65,7 +65,7 @@ export default function ProjectCard(props) {
       </div>
 
       <StyledTags>
-        {props.tags.map(tag => <p>{tag}</p>)}
+        {props.tags.map((tag, index) => <p key={index}>{tag}</p>)}
       </StyledTags>
 
       <StyledLinks>
