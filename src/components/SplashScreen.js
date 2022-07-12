@@ -3,14 +3,16 @@ import styled, { css } from 'styled-components'
 
 const StyledSplashScreen = styled.div`
   position: fixed;
-  z-index: 9999;
-  width: 100%;
-  height: 100vh;
   top: 0;
   left: 0;
-  background-color: var(--color-background-darkest);
-  transition: top 1s;
+  z-index: 9999;
 
+  width: 100%;
+  height: 100vh;
+
+  background-color: var(--color-background-darkest);
+
+  transition: top 1s;
   ${props => props.transitionComplete && css`
   top: -100vh;`
   }
@@ -28,6 +30,7 @@ const StyledSpan = styled.span`
   position: relative;
   bottom: -20px;
   opacity: 0;
+
   transition: ease-in-out 0.5s;
 
   ${props => props.fade === "fadeIn" && css`
@@ -40,7 +43,6 @@ const StyledSpan = styled.span`
   opacity: 0;`
   }
 `
-
 
 export default function SplashScreen() {
   const [firstNameFade, setFirstNameFade] = useState("")

@@ -1,21 +1,22 @@
 import React from 'react'
-import { ReactComponent as GitHubIcon } from "./icons/GitHub.svg"
-import { ReactComponent as ExternalLinkIcon } from "./icons/ExternalLink.svg"
+import GitHubIcon from "../../assets/icons/GitHub.svg"
+import ExternalLinkIcon from "../../assets/icons/ExternalLink.svg"
 import styled from 'styled-components'
 
 const StyledProjectCard = styled.article`
   display: flex;
   flex-direction: column;
+
   width: 100%;
   height: 25rem;
-  background-color: var(--color-background-light);
   border-radius: 1.5rem;
-
   padding: 2rem;
+  background-color: var(--color-background-light);
 
   a {
     text-decoration: none;
   }
+
   h2 {
     text-align: center;
     margin-bottom: 1rem;
@@ -38,13 +39,13 @@ const StyledProjectCard = styled.article`
   svg:hover {
       filter: brightness(0) saturate(100%) invert(85%) sepia(28%) saturate(774%) hue-rotate(101deg) brightness(93%) contrast(100%);
   }
-  
 `
 
 const StyledTags = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+
   color: var(--color-text-primary);
   margin-bottom: 1rem;
   font-size: 0.8rem;
@@ -54,6 +55,7 @@ const StyledLinks = styled.div`
   display: flex;
   gap: 1rem;
 `
+
 export default function ProjectCard(props) {
   return (
     <StyledProjectCard>
@@ -61,13 +63,16 @@ export default function ProjectCard(props) {
       <div className="description">
         <p>{props.description}</p>
       </div>
+
       <StyledTags>
         {props.tags.map(tag => <p>{tag}</p>)}
       </StyledTags>
+
       <StyledLinks>
         <a href={props.githubLink} target="_blank" rel="noreferrer"> <GitHubIcon /> </a>
         {props.externalLink && <a href={props.externalLink} target="_blank" rel="noreferrer"> <ExternalLinkIcon /> </a>}
       </StyledLinks>
+
     </StyledProjectCard>
   )
 }
