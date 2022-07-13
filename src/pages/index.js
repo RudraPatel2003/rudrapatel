@@ -10,7 +10,8 @@ export default function Home() {
           content="Rudra Patel is a first-year computer science student at the University of Tennessee" />
         
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/logo192.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
 
       <GlobalStyle />
