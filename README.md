@@ -16,16 +16,16 @@
 
 ## 🔨 Installation and Usage
 
-1. Fork the repository  
-2. Install dependencies
+### 1. Fork the repository  
+### 2. Install dependencies
 ```sh
 npm install
 ```
-3. Start the development server
+### 3. Start the development server
 ```sh
 npm run dev
 ```
-4. Create build (if needed)
+### 4. Create build (if needed)
 ```sh
 npm run build
 ```
