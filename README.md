@@ -35,7 +35,7 @@ npm run build
 ## 🎨 Design
 Original Figma design: [click here](https://www.figma.com/file/58Sw1Dl28R5cHzE6nybnPC/Portfolio-Website?node-id=0%3A1)
 
-Color palette (also found in [src/components/GlobalStyles.js](https://github.com/RudraPatel2003/rudrapatel/blob/master/src/components/GlobalStyle.js)): 
+Color palette (also found in [src/components/GlobalStyle.js](https://github.com/RudraPatel2003/rudrapatel/blob/master/src/components/GlobalStyle.js)): 
 | Description                 | Hex Code  |
 |-----------------------------|-----------|
 | Background                  | #071A38   |
