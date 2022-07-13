@@ -9,10 +9,12 @@
 <h2 align="center">My portfolio website designed on <a href="https://www.figma.com/" target="_blank" rel="noreferrer">Figma</a>, built with <a href="https://nextjs.org/" target="_blank" rel="noreferrer">Next.js</a>, and hosted on <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">Netlify</a>.</h2>
 
 <p align="center">
-  <img src="https://api.netlify.com/api/v1/badges/d047e6af-4acb-4dd7-b51a-2861888aa223/deploy-status" alt="Netlify deploy status">
+  <img src="https://api.netlify.com/api/v1/badges/ebf803d5-345a-410c-afcd-651333f2545a/deploy-status" alt="Netlify deploy status">
 </p>
 
-![Website Demo](https://raw.githubusercontent.com/RudraPatel2003/rudrapatel/master/src/assets/images/WebsiteImage.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/RudraPatel2003/rudrapatel/master/src/assets/images/WebsiteImage.PNG" alt="Website image">
+ </p>
 
 ## 🔨 Installation and Usage
 
@@ -33,7 +35,7 @@ npm run build
 ## 🎨 Design
 Original Figma design: [click here](https://www.figma.com/file/58Sw1Dl28R5cHzE6nybnPC/Portfolio-Website?node-id=0%3A1)
 
-Color palette (also found in [src/components/GlobalStyles.js](https://github.com/RudraPatel2003/rudrapatel/blob/master/src/components/GlobalStyle.js)): 
+Color palette (also found in [src/components/GlobalStyle.js](https://github.com/RudraPatel2003/rudrapatel/blob/master/src/components/GlobalStyle.js)): 
 | Description                 | Hex Code  |
 |-----------------------------|-----------|
 | Background                  | #071A38   |
