@@ -20,12 +20,13 @@ const StyledHeader = styled.header`
 
   backdrop-filter: blur(1rem);
 
-  /* Change nav color if not at top of page */
-  transition: background-color 1s ease-in-out, transform 0.25s ease-in-out;
+  /* Change nav color and add shadow if not at top of page */
+  transition: background-color 1s ease-in-out, box-sahdow 1s ease-in-out, transform 0.25s ease-in-out;
 
   ${props => props.scrolledToTop ? 
   css`background-color: var(--color-background);` 
-  : css`background-color: var(--color-background-dark-transparent);`
+  : css`background-color: var(--color-background-dark-transparent);
+        box-shadow: 0px 0px 4px -1px black;`
   }
 
   /* Hide nav on scroll down */
