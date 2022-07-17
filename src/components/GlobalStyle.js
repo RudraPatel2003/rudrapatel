@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Roboto"; 
+
   }
 
   :root {
@@ -35,6 +35,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: var(--color-background);
     min-height: 100%;
+    font-family: "Roboto", sans-serif; 
   }
   
   /* Scrollbar */
