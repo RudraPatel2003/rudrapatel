@@ -13,6 +13,13 @@ export const projects = [
     githubLink: "https://github.com/RudraPatel2003/rudrapatel"
   },
   {
+    name: "productivist",
+    description: "A responsive to-do list website built with Next.js and Tailwind CSS",
+    tags: ["JavaScript", "React", "Next.js", "Tailwind CSS"],
+    githubLink: "https://github.com/RudraPatel2003/productivist",
+    externalLink: "https://productivist.netlify.app/"
+  },
+  {
     name: "Sudoku Solver GUI",
     description: "Play Sudoku on a pygame window and watch the Sudoku backtracking algorithm in action.",
     tags: ["Python", "pygame", "GUI", "Algorithms"],
