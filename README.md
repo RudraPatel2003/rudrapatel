@@ -41,7 +41,7 @@ Color palette (also found in [src/components/GlobalStyle.js](https://github.com/
 | Background                  | #071A38   |
 | Background-Dark             | #06162F   |
 | Background-Dark-Transparent | #06162F5F |
-| Background-Darkest          | 05081F    |
+| Background-Darkest          | #05081F    |
 | Text-Primary                | #B7D0F7   |
 | Text-Secondary              | #6D88B0   |
 | Accent                      | #57ECC3   |
