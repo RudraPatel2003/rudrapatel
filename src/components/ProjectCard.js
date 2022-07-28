@@ -32,6 +32,7 @@ const StyledProjectCard = styled.article`
     color: var(--color-text-secondary);
     margin-bottom: auto;
     font-size: 1.1rem;
+    line-height: 1.5;
   }
 
   /* A very hacky way to change the color
