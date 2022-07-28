@@ -1,7 +1,7 @@
-import React from 'react'
-import ProjectCard from './ProjectCard'
-import { projects } from "../config"
-import styled from 'styled-components'
+import React from "react";
+import ProjectCard from "./ProjectCard";
+import { projects } from "../config";
+import styled from "styled-components";
 
 const StyledProjectsSection = styled.section`
   width: 80%;
@@ -20,7 +20,8 @@ const StyledProjectsSection = styled.section`
     margin-bottom: 1rem;
 
     /* Add the green lines */
-    &::before, &::after {
+    &::before,
+    &::after {
       content: "";
       position: absolute;
       display: block;
@@ -47,7 +48,7 @@ const StyledProjectsSection = styled.section`
       right: 0;
     }
   }
-`
+`;
 
 const GridContainer = styled.div`
   display: grid;
@@ -62,26 +63,26 @@ const GridContainer = styled.div`
   @media (min-width: 75em) {
     grid-template-columns: 1fr 1fr 1fr;
   }
-`
+`;
 
 export default function Projects() {
   const generateProjectCards = () => {
-    return projects.map((project, index) => <ProjectCard 
-      name={project.name} 
-      description={project.description} 
-      tags={project.tags} 
-      githubLink={project.githubLink} 
-      externalLink={project.externalLink}
-      key={index} />
-    )
-  }
+    return projects.map((project, index) => (
+      <ProjectCard
+        name={project.name}
+        description={project.description}
+        tags={project.tags}
+        githubLink={project.githubLink}
+        externalLink={project.externalLink}
+        key={index}
+      />
+    ));
+  };
 
   return (
     <StyledProjectsSection id="projects">
       <h2 className="section-header">Projects</h2>
-      <GridContainer>
-        {generateProjectCards()}
-      </GridContainer>
+      <GridContainer>{generateProjectCards()}</GridContainer>
     </StyledProjectsSection>
-  )
+  );
 }

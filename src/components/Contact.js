@@ -1,9 +1,9 @@
-import React from 'react'
-import styled from 'styled-components'
-import InstagramIcon  from "../assets/icons/Instagram.svg"
-import GitHubIcon from "../assets/icons/GitHub.svg"
-import LinkedInIcon from "../assets/icons/LinkedIn.svg"
-import { contactInformation } from "../config"
+import React from "react";
+import styled from "styled-components";
+import InstagramIcon from "../assets/icons/Instagram.svg";
+import GitHubIcon from "../assets/icons/GitHub.svg";
+import LinkedInIcon from "../assets/icons/LinkedIn.svg";
+import { contactInformation } from "../config";
 
 const StyledContactSection = styled.section`
   width: min(80%, 80ch);
@@ -20,7 +20,8 @@ const StyledContactSection = styled.section`
     margin-bottom: 1rem;
 
     /* Add the green lines */
-    &::before, &::after {
+    &::before,
+    &::after {
       content: "";
       position: absolute;
       display: block;
@@ -63,7 +64,7 @@ const StyledContactSection = styled.section`
       color: var(--color-accent);
     }
   }
-`
+`;
 
 const StyledLinks = styled.div`
   display: flex;
@@ -73,21 +74,52 @@ const StyledLinks = styled.div`
   // hacky way to make svg's green on hover
   // see ProjectCard.js for more info
   svg:hover {
-    filter: brightness(0) saturate(100%) invert(85%) sepia(28%) saturate(774%) hue-rotate(101deg) brightness(93%) contrast(100%);
+    filter: brightness(0) saturate(100%) invert(85%) sepia(28%) saturate(774%)
+      hue-rotate(101deg) brightness(93%) contrast(100%);
   }
-`
+`;
 
 export default function Contact() {
   return (
     <StyledContactSection id="contact">
       <h2>Contact Me</h2>
-      <p>If you want to get in touch, send me an email at <a href={`mailto:${contactInformation.email}`} target="_blank" rel="noreferrer">{contactInformation.email}</a>!</p>
+      <p>
+        If you want to get in touch, send me an email at{" "}
+        <a
+          href={`mailto:${contactInformation.email}`}
+          target="_blank"
+          rel="noreferrer">
+          {contactInformation.email}
+        </a>
+        !
+      </p>
       <p>Alternatively, check out my links below:</p>
       <StyledLinks>
-        {contactInformation.github && <a href={contactInformation.github} target="_blank" rel="noreferrer"> <GitHubIcon /> </a>}
-        {contactInformation.linkedIn && <a href={contactInformation.linkedIn} target="_blank" rel="noreferrer"> <LinkedInIcon /> </a>}
-        {contactInformation.instagram && <a href={contactInformation.instagram} target="_blank" rel="noreferrer"> <InstagramIcon /> </a>}
+        {contactInformation.github && (
+          <a href={contactInformation.github} target="_blank" rel="noreferrer">
+            {" "}
+            <GitHubIcon />{" "}
+          </a>
+        )}
+        {contactInformation.linkedIn && (
+          <a
+            href={contactInformation.linkedIn}
+            target="_blank"
+            rel="noreferrer">
+            {" "}
+            <LinkedInIcon />{" "}
+          </a>
+        )}
+        {contactInformation.instagram && (
+          <a
+            href={contactInformation.instagram}
+            target="_blank"
+            rel="noreferrer">
+            {" "}
+            <InstagramIcon />{" "}
+          </a>
+        )}
       </StyledLinks>
     </StyledContactSection>
-  )
+  );
 }

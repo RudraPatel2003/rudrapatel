@@ -1,7 +1,7 @@
-import React from 'react'
-import GitHubIcon from "../assets/icons/GitHub.svg"
-import ExternalLinkIcon from "../assets/icons/ExternalLink.svg"
-import styled from 'styled-components'
+import React from "react";
+import GitHubIcon from "../assets/icons/GitHub.svg";
+import ExternalLinkIcon from "../assets/icons/ExternalLink.svg";
+import styled from "styled-components";
 
 const StyledProjectCard = styled.article`
   display: flex;
@@ -24,7 +24,7 @@ const StyledProjectCard = styled.article`
     color: var(--color-text-primary);
 
     &:hover {
-      color: var(--color-accent)
+      color: var(--color-accent);
     }
   }
 
@@ -38,9 +38,10 @@ const StyledProjectCard = styled.article`
   https://stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element
   */
   svg:hover {
-      filter: brightness(0) saturate(100%) invert(85%) sepia(28%) saturate(774%) hue-rotate(101deg) brightness(93%) contrast(100%);
+    filter: brightness(0) saturate(100%) invert(85%) sepia(28%) saturate(774%)
+      hue-rotate(101deg) brightness(93%) contrast(100%);
   }
-`
+`;
 
 const StyledTags = styled.div`
   display: flex;
@@ -50,30 +51,39 @@ const StyledTags = styled.div`
   color: var(--color-text-primary);
   margin-bottom: 1rem;
   font-size: 0.8rem;
-`
+`;
 
 const StyledLinks = styled.div`
   display: flex;
   gap: 1rem;
-`
+`;
 
 export default function ProjectCard(props) {
   return (
     <StyledProjectCard>
-      <a href={props.githubLink} target="_blank" rel="noreferrer"><h2>{props.name}</h2></a>
+      <a href={props.githubLink} target="_blank" rel="noreferrer">
+        <h2>{props.name}</h2>
+      </a>
       <div className="description">
         <p>{props.description}</p>
       </div>
 
       <StyledTags>
-        {props.tags.map((tag, index) => <p key={index}>{tag}</p>)}
+        {props.tags.map((tag, index) => (
+          <p key={index}>{tag}</p>
+        ))}
       </StyledTags>
 
       <StyledLinks>
-        <a href={props.githubLink} target="_blank" rel="noreferrer"> <GitHubIcon /> </a>
-        {props.externalLink && <a href={props.externalLink} target="_blank" rel="noreferrer"> <ExternalLinkIcon /> </a>}
+        <a href={props.githubLink} target="_blank" rel="noreferrer">
+          <GitHubIcon />
+        </a>
+        {props.externalLink && (
+          <a href={props.externalLink} target="_blank" rel="noreferrer">
+            <ExternalLinkIcon />
+          </a>
+        )}
       </StyledLinks>
-
     </StyledProjectCard>
-  )
+  );
 }

@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const StyledFooter = styled.footer`
   display: flex;
@@ -19,16 +19,35 @@ const StyledFooter = styled.footer`
     color: inherit;
 
     &:hover {
-      color:var(--color-accent);
+      color: var(--color-accent);
     }
   }
-`
+`;
 
 export default function Footer() {
   return (
     <StyledFooter>
-      <p><a href="https://www.figma.com/file/58Sw1Dl28R5cHzE6nybnPC/Portfolio-Website?node-id=0%3A1" target="_blank" rel="noreferrer">Designed</a> and <a href="https://github.com/RudraPatel2003/rudrapatel" target="_blank" rel="noreferrer">Created</a> by Rudra Patel</p> 
-      <p><a href="https://brittanychiang.com/" target="_blank" rel="noreferrer">Inspired by Brittany Chiang</a></p>
+      <p>
+        <a
+          href="https://www.figma.com/file/58Sw1Dl28R5cHzE6nybnPC/Portfolio-Website?node-id=0%3A1"
+          target="_blank"
+          rel="noreferrer">
+          Designed
+        </a>{" "}
+        and{" "}
+        <a
+          href="https://github.com/RudraPatel2003/rudrapatel"
+          target="_blank"
+          rel="noreferrer">
+          Created
+        </a>{" "}
+        by Rudra Patel
+      </p>
+      <p>
+        <a href="https://brittanychiang.com/" target="_blank" rel="noreferrer">
+          Inspired by Brittany Chiang
+        </a>
+      </p>
     </StyledFooter>
-  )
+  );
 }

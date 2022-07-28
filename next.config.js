@@ -5,7 +5,7 @@ const nextConfig = {
 
   // https://nextjs.org/docs/advanced-features/compiler#styled-components
   compiler: {
-    styledComponents: true 
+    styledComponents: true,
   },
 
   // npm install @svgr/webpack
@@ -16,11 +16,11 @@ const nextConfig = {
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
-      use: ["@svgr/webpack"]
+      use: ["@svgr/webpack"],
     });
 
     return config;
-  }
-}
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

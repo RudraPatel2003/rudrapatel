@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -49,6 +49,6 @@ const GlobalStyle = createGlobalStyle`
     background-color: var(--color-text-secondary);
     border-radius: 1rem;
   }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
