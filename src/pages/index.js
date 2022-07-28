@@ -9,8 +9,9 @@ import {
   Contact,
   Footer,
 } from "../components";
+import { Octokit } from "@octokit/core";
 
-export default function Home() {
+export default function Home({ projects }) {
   return (
     <>
       <Head>
@@ -34,9 +35,41 @@ export default function Home() {
       <NavBar />
       <Hero />
       <About />
-      <Projects />
+      <Projects projects={projects} />
       <Contact />
       <Footer />
     </>
   );
+}
+
+export const getStaticProps = async () => {
+
+  const octokit = new Octokit({
+    auth: process.env.GITHUB_PERSONAL_ACCESS_TOKEN,
+  });
+
+  const response = await octokit.request("GET /users/{username}/repos", {
+    username: "RudraPatel2003",
+  });
+
+  const projects = [];
+
+  response.data.forEach((project) => {
+    const projectObject = {};
+
+    projectObject.name = project.name;
+    if (projectObject.name === "RudraPatel2003") return;
+
+    projectObject.description = project.description;
+    projectObject.tags = project.topics;
+    projectObject.githubLink = project.html_url;
+    projectObject.externalLink = project.homepage;
+
+    projects.push(projectObject);
+  });
+
+  return {
+    props: { projects },
+    revalidate: 60 * 60, // revalidate once an hour
+  };
 }

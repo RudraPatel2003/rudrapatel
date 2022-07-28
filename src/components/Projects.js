@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import { projects } from "../config";
 import styled from "styled-components";
 
 const StyledProjectsSection = styled.section`
@@ -65,7 +64,7 @@ const GridContainer = styled.div`
   }
 `;
 
-export default function Projects() {
+export default function Projects({ projects }) {
   const generateProjectCards = () => {
     return projects.map((project, index) => (
       <ProjectCard
