@@ -9,6 +9,7 @@ const StyledAboutSection = styled.section`
 
   h2 {
     position: relative;
+    z-index: 1;
 
     color: var(--color-text-primary);
     background-color: var(--color-background);
@@ -19,33 +20,22 @@ const StyledAboutSection = styled.section`
     margin-bottom: 1rem;
 
     /* Add the green lines */
-    &::before,
-    &::after {
+    &::before {
       content: "";
       position: absolute;
+      z-index: -1;
       display: block;
       top: 50%;
 
-      width: calc(30% - clamp(2rem, 4vw, 4rem));
+      width: calc(100%);
       height: 1px;
       background-color: var(--color-accent);
-
-      /* Manual adjustment of green lines */
-      @media (min-width: 25em) {
-        width: calc(35% - clamp(2rem, 4vw, 4rem));
-      }
-
-      @media (min-width: 40em) {
-        width: calc(38% - clamp(2rem, 4vw, 4rem));
-      }
     }
 
-    &::before {
-      left: 0;
-    }
-
-    &::after {
-      right: 0;
+    /* Adds gap between line and word*/
+    span {
+      background-color: var(--color-background);
+      padding-inline: 1rem;
     }
   }
 
@@ -60,7 +50,9 @@ const StyledAboutSection = styled.section`
 export default function About() {
   return (
     <StyledAboutSection id="about">
-      <h2>About Me</h2>
+      <h2>
+        <span>About Me</span>
+      </h2>
       <p>
         Hi! My name is Rudra and I am a first-year computer science student at
         the University of Tennessee - Knoxville.

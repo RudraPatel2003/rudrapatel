@@ -13,39 +13,33 @@ const StyledContactSection = styled.section`
 
   h2 {
     position: relative;
+    z-index: 1;
+
     background-color: var(--color-background);
     color: var(--color-text-primary);
+
     font-size: clamp(2rem, 4vw, 4rem);
     text-align: center;
+
     margin-bottom: 1rem;
 
     /* Add the green lines */
-    &::before,
-    &::after {
+    &::before {
       content: "";
       position: absolute;
+      z-index: -1;
       display: block;
       top: 50%;
 
-      width: calc(25% - clamp(2rem, 4vw, 4rem));
+      width: calc(100%);
       height: 1px;
       background-color: var(--color-accent);
-
-      @media (min-width: 25em) {
-        width: calc(33% - clamp(2rem, 4vw, 4rem));
-      }
-
-      @media (min-width: 40em) {
-        width: calc(33% - clamp(2rem, 4vw, 4rem));
-      }
     }
 
-    &::before {
-      left: 0;
-    }
-
-    &::after {
-      right: 0;
+    /* Adds gap between line and word*/
+    span {
+      background-color: var(--color-background);
+      padding-inline: 1rem;
     }
   }
 
@@ -82,7 +76,9 @@ const StyledLinks = styled.div`
 export default function Contact() {
   return (
     <StyledContactSection id="contact">
-      <h2>Contact Me</h2>
+      <h2>
+        <span>Contact Me</span>
+      </h2>
       <p>
         If you want to get in touch, send me an email at{" "}
         <a
