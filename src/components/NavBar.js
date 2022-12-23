@@ -188,7 +188,11 @@ export default function NavBar() {
             </Link>
           </li>
           <li>
-            <a href="/resume.pdf" className="outline">
+            <a
+              href="/resume.pdf"
+              className="outline"
+              target="_blank"
+              rel="noreferrer">
               Resume
             </a>
           </li>
