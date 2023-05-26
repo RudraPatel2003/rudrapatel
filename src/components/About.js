@@ -54,7 +54,7 @@ export default function About() {
         <span>About Me</span>
       </h2>
       <p>
-        Hi! My name is Rudra and I am a first-year computer science student at
+        Hi! My name is Rudra and I am a second-year computer science student at
         the University of Tennessee - Knoxville.
       </p>
       <p>
@@ -69,7 +69,7 @@ export default function About() {
         I began my programming journey by learning Python through Codecademy.
         Now, I am teaching myself front-end web development.
       </p>
-      <p>Check out some of my projects below!</p>
+      <p>See what I&apos;ve been up to below!</p>
     </StyledAboutSection>
   );
 }
