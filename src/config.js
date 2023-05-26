@@ -14,6 +14,13 @@ export const projects = [
     githubLink: "https://github.com/RudraPatel2003/rudrapatel",
   },
   {
+    name: "Community Coalition Against Human Trafficking",
+    description:
+      "With Hack4Impact UTK, I helped build an inventory management / warehousing system for a local non-profit.",
+    tags: ["TypeScript", "React", "Dev Team"],
+    githubLink: "https://github.com/hack4impact-utk/community-coalition-against-human-trafficking",
+  },
+  {
     name: "productivist",
     description:
       "A responsive to-do list website built with Next.js and Tailwind CSS that incorporates user authentication through next-auth and MongoDB.",
