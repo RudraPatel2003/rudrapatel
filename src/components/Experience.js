@@ -109,6 +109,7 @@ const StyledJobDescription = styled.div`
   border-radius: 1.5rem;
   padding: 2rem;
   background-color: var(--color-background-light);
+  box-shadow: 0px 0px 8px -4px black;
 
   display: flex;
   flex-direction: column;
