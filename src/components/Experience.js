@@ -1,18 +1,12 @@
-import React, { useState, useEffect } from "react";
-import styled, { css } from "styled-components";
-import { INITIAL_JOB_INDEX, jobs } from "../config";
+import React, { useState, useEffect } from 'react';
+import styled, { css } from 'styled-components';
+import { INITIAL_JOB_INDEX, jobs } from '../config';
 
 const StyledExperienceSection = styled.section`
   width: 80%;
   margin-inline: auto;
   margin-bottom: 20vh;
   padding: 5rem 0;
-
-  display: flex;
-  flex-direction: column;
-  @media (min-width: 1300px) {
-    align-items: center;;
-  }
 
   h2 {
     position: relative;
@@ -28,7 +22,7 @@ const StyledExperienceSection = styled.section`
 
     /* Add the green lines */
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       z-index: -1;
       display: block;
@@ -45,11 +39,20 @@ const StyledExperienceSection = styled.section`
       padding-inline: 1rem;
     }
   }
+
+  .responsive-centerer {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1300px) {
+      align-items: center;
+    }
+  }
 `;
 
 const StyledExperienceSelector = styled.div`
   position: relative;
-  width: 100%;
+  width: min(100%, 80ch);
   height: 3rem;
   margin-bottom: 1rem;
 
@@ -59,10 +62,6 @@ const StyledExperienceSelector = styled.div`
 
   &::-webkit-scrollbar {
     height: 5px;
-  }
-
-  @media (min-width: 1300px) {
-    width: 50%;
   }
 `;
 
@@ -89,12 +88,12 @@ const StyledJobTitle = styled.h3`
 
 const StyledSlidingBar = styled.div`
   position: absolute;
-  content: " ";
+  content: ' ';
   bottom: 0.5rem;
   z-index: 10;
 
   // move around the sliding bar by adjusting its left position based on state
-  left: ${(props) => (175 * props.selectedJobIndex).toString() + "px"};
+  left: ${(props) => (175 * props.selectedJobIndex).toString() + 'px'};
 
   height: 3px;
   width: 175px;
@@ -106,7 +105,7 @@ const StyledSlidingBar = styled.div`
 
 const StyledJobDescription = styled.div`
   width: min(100%, 80ch);
-  height: max-content;
+  height: 35rem;
   border-radius: 1.5rem;
   padding: 2rem;
   background-color: var(--color-background-light);
@@ -134,6 +133,14 @@ const StyledJobDescription = styled.div`
     color: var(--color-text-secondary);
     margin-bottom: 0.75rem;
   }
+
+  @media (min-width: 450px) {
+    height: 25rem;
+  }
+
+  @media (min-width: 400px) {
+    height: 20rem;
+  }
 `;
 
 export default function Experience() {
@@ -149,35 +156,37 @@ export default function Experience() {
       <h2>
         <span>Experience</span>
       </h2>
-      <StyledExperienceSelector>
-        {jobs.map((job, index) => {
-          return (
-            <StyledJobTitle
-              key={index}
-              jobIndex={job.jobIndex}
-              selectedJobIndex={selectedJobIndex}
-              onClick={() => setSelectedJobIndex(job.jobIndex)}
-            >
-              {job.companyName}
-            </StyledJobTitle>
-          );
-        })}
-        <StyledSlidingBar selectedJobIndex={selectedJobIndex} />
-      </StyledExperienceSelector>
-      <StyledJobDescription>
-        <h3>
-          {selectedJob.longCompanyName
-            ? selectedJob.longCompanyName
-            : selectedJob.companyName}
-        </h3>
-        <h4>{selectedJob.jobTitle}</h4>
-        <h4>{selectedJob.dateOfEmployment}</h4>
-        <ul>
-          {selectedJob.bulletPoints.map((bulletPoint, index) => {
-            return <li key={index}>{bulletPoint}</li>;
+      <div className="responsive-centerer">
+        <StyledExperienceSelector>
+          {jobs.map((job, index) => {
+            return (
+              <StyledJobTitle
+                key={index}
+                jobIndex={job.jobIndex}
+                selectedJobIndex={selectedJobIndex}
+                onClick={() => setSelectedJobIndex(job.jobIndex)}
+              >
+                {job.companyName}
+              </StyledJobTitle>
+            );
           })}
-        </ul>
-      </StyledJobDescription>
+          <StyledSlidingBar selectedJobIndex={selectedJobIndex} />
+        </StyledExperienceSelector>
+        <StyledJobDescription>
+          <h3>
+            {selectedJob.longCompanyName
+              ? selectedJob.longCompanyName
+              : selectedJob.companyName}
+          </h3>
+          <h4>{selectedJob.jobTitle}</h4>
+          <h4>{selectedJob.dateOfEmployment}</h4>
+          <ul>
+            {selectedJob.bulletPoints.map((bulletPoint, index) => {
+              return <li key={index}>{bulletPoint}</li>;
+            })}
+          </ul>
+        </StyledJobDescription>
+      </div>
     </StyledExperienceSection>
   );
 }
