@@ -54,7 +54,7 @@ const StyledExperienceSelector = styled.div`
   position: relative;
   width: min(100%, 80ch);
   height: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 
   display: flex;
   justify-content: flex-start;
