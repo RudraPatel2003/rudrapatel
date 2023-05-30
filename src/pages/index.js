@@ -4,6 +4,7 @@ import {
   SplashScreen,
   NavBar,
   Hero,
+  Experience,
   About,
   Projects,
   Contact,
@@ -34,6 +35,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <About />
+      <Experience />
       <Projects />
       <Contact />
       <Footer />

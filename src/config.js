@@ -18,7 +18,8 @@ export const projects = [
     description:
       "With Hack4Impact UTK, I helped build an inventory management / warehousing system for a local non-profit.",
     tags: ["TypeScript", "React", "Dev Team"],
-    githubLink: "https://github.com/hack4impact-utk/community-coalition-against-human-trafficking",
+    githubLink:
+      "https://github.com/hack4impact-utk/community-coalition-against-human-trafficking",
   },
   {
     name: "productivist",
@@ -57,3 +58,50 @@ export const projects = [
     githubLink: "https://github.com/RudraPatel2003/US_State_Capitals_Quiz_GUI",
   },
 ];
+
+export const INITIAL_JOB_INDEX = 2;
+
+export const jobs = [
+  {
+    jobIndex: 0,
+    companyName: "Target",
+    jobTitle: "Guest Advocate",
+    dateOfEmployment: "July 2021 - May 2023",
+    bulletPoints: [
+      "Hold positive interactions with over 160 guests per shift",
+      "Resolve over 10 guest complaints per shift",
+      "Maintain flexibility across 6 different job roles",
+    ],
+  },
+  {
+    jobIndex: 1,
+    companyName: "Hack4Impact UTK",
+    jobTitle: "Developer",
+    dateOfEmployment: "October 2022 - Present",
+    bulletPoints: [
+      "Volunteered with 5 other Hack4Impact UTK developers to create an internal warehouse and inventory management system for a local nonprofit organization",
+      "Spearheaded the implementation of user authentication using the next-auth library",
+      "Followed the Scrum framework for agile development to complete project deliverables",
+    ],
+  },
+  {
+    jobIndex: 2,
+    companyName: "KUB",
+    longCompanyName: "Knoxville Utilities Board",
+    jobTitle: "Software Developer Intern",
+    dateOfEmployment: "May 2023 - Present",
+    bulletPoints: [
+      "I just recently started this position. Stay tuned to see what I accomplish!",
+    ],
+  },
+];
+// export const jobs = [
+//   {
+//     companyName:
+//     jobTitle:
+//     startDate:
+//     endDate:
+//  bulletPoints: []
+
+//   }
+// ]
