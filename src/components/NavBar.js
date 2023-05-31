@@ -178,6 +178,11 @@ export default function NavBar() {
             </Link>
           </li>
           <li>
+            <Link href="/#experience">
+              <a onClick={closeHamburgerMenu}>Experience</a>
+            </Link>
+          </li>
+          <li>
             <Link href="/#projects">
               <a onClick={closeHamburgerMenu}>Projects</a>
             </Link>
