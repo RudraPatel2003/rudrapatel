@@ -8,7 +8,7 @@ import styled, { css } from "styled-components";
 const StyledHeader = styled.header`
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 999;
 
   display: flex;
   justify-content: space-between;
