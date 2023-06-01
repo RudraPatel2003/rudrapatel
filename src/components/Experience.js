@@ -105,7 +105,7 @@ const StyledSlidingBar = styled.div`
 
 const StyledJobDescription = styled.div`
   width: min(100%, 80ch);
-  height: 35rem;
+  height: 45rem;
   border-radius: 1.5rem;
   padding: 2rem;
   background-color: var(--color-background-light);
@@ -135,13 +135,18 @@ const StyledJobDescription = styled.div`
     margin-bottom: 0.75rem;
   }
 
+  @media (min-width: 320px) {
+    height: 35rem;
+  }
+  @media (min-width: 400px) {
+    height: 30rem;
+  }
+
   @media (min-width: 450px) {
     height: 25rem;
   }
 
-  @media (min-width: 400px) {
-    height: 20rem;
-  }
+  
 `;
 
 export default function Experience() {
