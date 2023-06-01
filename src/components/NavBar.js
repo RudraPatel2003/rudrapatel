@@ -52,7 +52,7 @@ const StyledHeader = styled.header`
     display: none;
   }
 
-  @media (max-width: 40em) {
+  @media (max-width: 700px) {
     .hamburger-menu {
       display: block;
       position: absolute;
