@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import styled, { css } from 'styled-components';
-import { INITIAL_JOB_INDEX, jobs } from '../config';
+import React, { useState, useEffect } from "react";
+import styled, { css } from "styled-components";
+import { INITIAL_JOB_INDEX, jobs } from "../config";
 
 const StyledExperienceSection = styled.section`
   width: 80%;
@@ -22,7 +22,7 @@ const StyledExperienceSection = styled.section`
 
     /* Add the green lines */
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       z-index: -1;
       display: block;
@@ -40,13 +40,10 @@ const StyledExperienceSection = styled.section`
     }
   }
 
-  .responsive-centerer {
+  .centerer {
     display: flex;
     flex-direction: column;
-
-    @media (min-width: 1300px) {
-      align-items: center;
-    }
+    align-items: center;
   }
 `;
 
@@ -88,12 +85,12 @@ const StyledJobTitle = styled.h3`
 
 const StyledSlidingBar = styled.div`
   position: absolute;
-  content: ' ';
+  content: " ";
   bottom: 0.5rem;
   z-index: 10;
 
   // move around the sliding bar by adjusting its left position based on state
-  left: ${(props) => (175 * props.selectedJobIndex).toString() + 'px'};
+  left: ${(props) => (175 * props.selectedJobIndex).toString() + "px"};
 
   height: 3px;
   width: 175px;
@@ -145,8 +142,6 @@ const StyledJobDescription = styled.div`
   @media (min-width: 450px) {
     height: 25rem;
   }
-
-  
 `;
 
 export default function Experience() {
@@ -162,7 +157,7 @@ export default function Experience() {
       <h2>
         <span>Experience</span>
       </h2>
-      <div className="responsive-centerer">
+      <div className="centerer">
         <StyledExperienceSelector>
           {jobs.map((job, index) => {
             return (
