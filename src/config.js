@@ -91,17 +91,11 @@ export const jobs = [
     jobTitle: "Software Developer Intern",
     dateOfEmployment: "May 2023 - Present",
     bulletPoints: [
-      "I just recently started this position. Stay tuned to see what I accomplish!",
+      "Refactored power outage notification system that sends up to 1 million notifications per week to provide over 400,000 customers with more accurate estimated restoration times",
+      "Enhanced cybersecurity and data integrity by implementing stricter authorization requirements for public API endpoints",
+      "Updated Java Enterprise Edition APIs to ensure long-term stability and to meet financial constraints",
+      "Strengthened database security by migrating SQL database information to Microsoft’s .NET Entity Framework Core",
+      "Increased customer acquisition by improving the UI/UX on the fiber internet shopping page",
     ],
   },
 ];
-// export const jobs = [
-//   {
-//     companyName:
-//     jobTitle:
-//     startDate:
-//     endDate:
-//  bulletPoints: []
-
-//   }
-// ]

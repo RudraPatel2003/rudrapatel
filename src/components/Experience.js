@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled, { css } from "styled-components";
 import { INITIAL_JOB_INDEX, jobs } from "../config";
 
-const StyledExperienceSection = styled.section`
+const StyledExperienceSection = styled.section` 
   width: 80%;
   margin-inline: auto;
   margin-bottom: 20vh;
@@ -102,7 +102,7 @@ const StyledSlidingBar = styled.div`
 
 const StyledJobDescription = styled.div`
   width: min(100%, 80ch);
-  height: 45rem;
+  height: min-content;
   border-radius: 1.5rem;
   padding: 2rem;
   background-color: var(--color-background-light);
@@ -130,17 +130,6 @@ const StyledJobDescription = styled.div`
   li {
     color: var(--color-text-secondary);
     margin-bottom: 0.75rem;
-  }
-
-  @media (min-width: 320px) {
-    height: 35rem;
-  }
-  @media (min-width: 400px) {
-    height: 30rem;
-  }
-
-  @media (min-width: 450px) {
-    height: 25rem;
   }
 `;
 
