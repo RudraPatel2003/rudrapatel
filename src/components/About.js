@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledAboutSection = styled.section`
-  width: min(80%, 80ch);
+  width: min(90%, 80ch);
   margin-inline: auto;
   margin-bottom: 20vh;
   padding: 5rem 0;

@@ -10,7 +10,7 @@ const StyledHeroSection = styled.section`
   align-content: center;
 
   min-height: 100vh;
-  max-width: 80%;
+  max-width: 90%;
 
   margin-inline: auto;
 

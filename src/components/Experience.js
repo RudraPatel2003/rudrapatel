@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import { INITIAL_JOB_INDEX, jobs } from "../config";
 
 const StyledExperienceSection = styled.section` 
-  width: 80%;
+  width: 90%;
   margin-inline: auto;
   margin-bottom: 20vh;
   padding: 5rem 0;

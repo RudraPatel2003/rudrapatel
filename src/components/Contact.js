@@ -6,7 +6,7 @@ import LinkedInIcon from "../assets/icons/LinkedIn.svg";
 import { contactInformation } from "../config";
 
 const StyledContactSection = styled.section`
-  width: min(80%, 80ch);
+  width: min(90%, 80ch);
   margin-inline: auto;
   margin-bottom: 20vh;
   padding: 5rem 0;

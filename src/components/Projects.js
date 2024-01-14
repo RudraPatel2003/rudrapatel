@@ -4,7 +4,7 @@ import { projects } from "../config";
 import styled from "styled-components";
 
 const StyledProjectsSection = styled.section`
-  width: 80%;
+  width: 90%;
   margin-inline: auto;
   padding: 5rem 0;
 
