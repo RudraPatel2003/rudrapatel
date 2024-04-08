@@ -7,11 +7,19 @@ export const contactInformation = {
 
 export const projects = [
   {
-    name: "Portfolio Website",
+    name: "ParkUTK",
     description:
-      "The website you are currently on right now. Built to showcase my personal projects and introduce myself!",
-    tags: ["JavaScript", "React", "Next.js", "Styled Components"],
-    githubLink: "https://github.com/RudraPatel2003/rudrapatel",
+      "A cross-platform app that helps you find parking. Built using React Native with a Docker-containerized backend hosted on Google Cloud.",
+      tags: ["React Native", "Docker", "Google Cloud", "CI/CD"],
+      gitHubLink: "https://github.com/RudraPatel2003/park-utk-native"
+  },
+  {
+    name: "productivist",
+    description:
+      "A responsive to-do list website built with Next.js and Tailwind CSS that incorporates user authentication through next-auth and MongoDB.",
+    tags: ["React", "Next.js", "Tailwind CSS", "next-auth", "MongoDB"],
+    githubLink: "https://github.com/RudraPatel2003/productivist",
+    externalLink: "https://productivist.vercel.app/",
   },
   {
     name: "Community Coalition Against Human Trafficking",
@@ -22,12 +30,11 @@ export const projects = [
       "https://github.com/hack4impact-utk/community-coalition-against-human-trafficking",
   },
   {
-    name: "productivist",
+    name: "Portfolio Website",
     description:
-      "A responsive to-do list website built with Next.js and Tailwind CSS that incorporates user authentication through next-auth and MongoDB.",
-    tags: ["React", "Next.js", "Tailwind CSS", "next-auth", "MongoDB"],
-    githubLink: "https://github.com/RudraPatel2003/productivist",
-    externalLink: "https://productivist.vercel.app/",
+      "The website you are currently on right now. Built to showcase my personal projects and introduce myself!",
+    tags: ["JavaScript", "React", "Next.js", "Styled Components"],
+    githubLink: "https://github.com/RudraPatel2003/rudrapatel",
   },
   {
     name: "Sudoku Solver GUI",
@@ -42,13 +49,6 @@ export const projects = [
       "Launch a Python Selenium bot that plays the New York Times' Spelling Bee game.",
     tags: ["Python", "Selenium", "Web Scraping"],
     githubLink: "https://github.com/RudraPatel2003/NYT_Spelling_Bee_Solver",
-  },
-  {
-    name: "Percy Warner Getaways",
-    description: "View a responsive landing page for a nature tour company.",
-    tags: ["JavaScript", "HTML", "CSS"],
-    githubLink: "https://github.com/RudraPatel2003/Percy_Warner_Getaways",
-    externalLink: "https://rudrapatel2003.github.io/Percy_Warner_Getaways/",
   },
   {
     name: "U.S. State Capitals Quiz GUI",
