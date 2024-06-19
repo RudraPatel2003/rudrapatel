@@ -65,7 +65,7 @@ export default function Hero() {
       <h1>Hello! My name is</h1>
       <h2>Rudra Patel.</h2>
       <p>
-        Currently, I am a second-year computer science student at the{" "}
+        Currently, I am a third-year computer science student at the{" "}
         <a href="https://www.utk.edu/" target="_blank" rel="noreferrer">
           University of Tennessee
         </a>

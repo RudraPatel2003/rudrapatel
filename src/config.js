@@ -10,8 +10,8 @@ export const projects = [
     name: "ParkUTK",
     description:
       "A cross-platform app that helps you find parking. Built using React Native with a Docker-containerized backend hosted on Google Cloud.",
-      tags: ["React Native", "Docker", "Google Cloud", "CI/CD"],
-      gitHubLink: "https://github.com/RudraPatel2003/park-utk-native"
+    tags: ["React Native", "Docker", "Google Cloud", "CI/CD"],
+    gitHubLink: "https://github.com/RudraPatel2003/park-utk-native",
   },
   {
     name: "productivist",
@@ -59,43 +59,45 @@ export const projects = [
   },
 ];
 
-export const INITIAL_JOB_INDEX = 2;
+export const INITIAL_JOB_INDEX = 0;
 
 export const jobs = [
   {
     jobIndex: 0,
-    companyName: "Target",
-    jobTitle: "Guest Advocate",
-    dateOfEmployment: "July 2021 - May 2023",
+    companyName: "GE Vernova",
+    longCompanyName: "General Electric Vernova",
+    jobTitle: "Cloud Engineering Intern",
+    dateOfEmployment: "May 2024 - Present",
     bulletPoints: [
-      "Hold positive interactions with over 160 guests per shift",
-      "Resolve over 10 guest complaints per shift",
-      "Maintain flexibility across 6 different job roles",
+      "Streamlined AWS account creation process, decreasing account delivery time to stakeholders by 70%.",
+      "Implemented an Ansible playbook to facilitate Infrastructure as Code (IaC) for securely creating and managing AWS resources, reducing accidental spending by 40%",
+      "Built a GitHub Actions workflow to verify that all IaC is valid and free of security vulnerabilities, maintaining codebase integrity and preventing data leaks",
     ],
   },
   {
     jobIndex: 1,
-    companyName: "Hack4Impact UTK",
-    jobTitle: "Developer",
-    dateOfEmployment: "October 2022 - Present",
-    bulletPoints: [
-      "Volunteered with 5 other Hack4Impact UTK developers to create an internal warehouse and inventory management system for a local nonprofit organization",
-      "Spearheaded the implementation of user authentication using the next-auth library",
-      "Followed the Scrum framework for agile development to complete project deliverables",
-    ],
-  },
-  {
-    jobIndex: 2,
     companyName: "KUB",
     longCompanyName: "Knoxville Utilities Board",
     jobTitle: "Software Developer Intern",
-    dateOfEmployment: "May 2023 - Present",
+    dateOfEmployment: "May 2023 - May 2024",
     bulletPoints: [
       "Refactored power outage notification system that sends up to 1 million notifications per week to provide over 400,000 customers with more accurate estimated restoration times",
       "Enhanced cybersecurity and data integrity by implementing stricter authorization requirements for public API endpoints",
       "Updated Java Enterprise Edition APIs to ensure long-term stability and to meet financial constraints",
       "Strengthened database security by migrating SQL database information to Microsoft’s .NET Entity Framework Core",
       "Increased customer acquisition by improving the UI/UX on the fiber internet shopping page",
+    ],
+  },
+  {
+    jobIndex: 2,
+    companyName: "Hack4Impact UTK",
+    jobTitle: "Developer",
+    dateOfEmployment: "October 2022 - Present",
+    bulletPoints: [
+      "Volunteered to create an internal warehouse and inventory management system for a local nonprofit organization that handles over 5000 items concurrently for over 35 staff members",
+      "Collaborated with 6 other Hack4Impact developers to gather and implement product requirements using the Scrum framework for agile product development",
+      "Spearheaded the implementation of user authentication to ensure data privacy and security",
+      "Released the final product, immediately increasing warehouse efficiency and improving productivity",
     ],
   },
 ];
