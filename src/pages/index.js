@@ -18,7 +18,7 @@ export default function Home() {
         <title>Rudra Patel</title>
         <meta
           name="description"
-          content="Rudra Patel is a first-year computer science student at the University of Tennessee"
+          content="Rudra Patel is a third-year computer science student at the University of Tennessee"
         />
 
         <link rel="icon" href="/favicon.ico" />
