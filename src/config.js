@@ -67,7 +67,7 @@ export const jobs = [
     companyName: "GE Vernova",
     longCompanyName: "General Electric Vernova",
     jobTitle: "Cloud Engineering Intern",
-    dateOfEmployment: "May 2024 - Present",
+    dateOfEmployment: "May 2024 - August 2024",
     bulletPoints: [
       "Streamlined AWS account creation process, decreasing account delivery time to stakeholders by 70%.",
       "Implemented an Ansible playbook to facilitate Infrastructure as Code (IaC) for securely creating and managing AWS resources, reducing accidental spending by 40%",
@@ -79,7 +79,7 @@ export const jobs = [
     companyName: "KUB",
     longCompanyName: "Knoxville Utilities Board",
     jobTitle: "Software Developer Intern",
-    dateOfEmployment: "May 2023 - May 2024",
+    dateOfEmployment: "May 2023 - May 2024, August 2024 - Present",
     bulletPoints: [
       "Refactored power outage notification system that sends up to 1 million notifications per week to provide over 400,000 customers with more accurate estimated restoration times",
       "Enhanced cybersecurity and data integrity by implementing stricter authorization requirements for public API endpoints",
