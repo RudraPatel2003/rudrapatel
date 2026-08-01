@@ -1,7 +1,7 @@
 ---
 import { z } from "zod";
 
-import Button from "./button.astro";
+import Button from "../ui/button.astro";
 import homePageData from "./home-page-data.json";
 import ListItem from "./list-item.astro";
 
@@ -11,8 +11,6 @@ const homePageDataSchema = z.object({
     gitHubLink: z.string(),
   }),
   jobInfo: z.object({
-    jobTitle: z.string(),
-    companyName: z.string(),
     companyLink: z.string(),
   }),
 });
@@ -23,7 +21,7 @@ const { personalInfo, jobInfo } = validatedHomePageData;
 ---
 
 <main class="flex min-h-screen min-w-screen items-center justify-center">
-  <section class="mx-auto max-w-[700px] p-4">
+  <section class="mx-auto max-w-175 p-4">
     <header class="mb-2">
       <h1 class="mb-4 text-4xl font-semibold">Hi, I'm Rudra.</h1>
       <p class="text-xl text-secondary">I am a full-stack software engineer</p>
@@ -47,14 +45,14 @@ const { personalInfo, jobInfo } = validatedHomePageData;
     </ul>
 
     <p class="mb-6 text-lg text-secondary">
-      I'm currently an {jobInfo.jobTitle}
+      I'm currently a Software Engineer
       <a
         class="font-medium text-accent"
         href={jobInfo.companyLink}
         target="_blank"
         rel="noreferrer"
       >
-        @ {jobInfo.companyName}
+        @ Sentry
       </a>
     </p>
 
