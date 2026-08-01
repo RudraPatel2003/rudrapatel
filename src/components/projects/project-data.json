@@ -22,6 +22,11 @@
         "name": "GitHub Repository Viewer",
         "description": "A Flow Launcher plugin to quickly navigate to your personal repositories",
         "link": "https://github.com/RudraPatel2003/github-repository-viewer"
+      },
+      {
+        "name": "swelog-cli",
+        "description": "A Rust CLI tool to track your daily accomplishments in Obsidian",
+        "link": "https://github.com/RudraPatel2003/swelog-cli"
       }
     ]
   },
@@ -45,6 +50,11 @@
     "sectionName": "Open Source Contributions",
     "sectionSubtitle": "Contributions I have made to other people's projects",
     "projects": [
+      {
+        "name": "Sentry",
+        "description": "Sentry is open-source. Come see my contributions!",
+        "link": "https://github.com/search?q=is%3Apr+author%3ARudraPatel2003+org%3Agetsentry&type=pullrequests"
+      },
       {
         "name": "Bruno",
         "description": "Added a new feature to Bruno that allows users to copy environment variables from the request pane's popover",
